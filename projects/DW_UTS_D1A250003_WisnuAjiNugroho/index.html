@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Heula</title>
+  <link rel="icon" type="image/png" href="Gambar WhatsApp 2025-11-21 pukul 20.20.05_df19ab89.jpg">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <!-- LOADER -->
+<div id="loader">
+  <div class="spinner"></div>
+</div>
+
+
+  <!-- NAVBAR -->
+  <header>
+    <a href="#" class="logo">
+      <img src="Gambar WhatsApp 2025-11-21 pukul 20.20.05_df19ab89.jpg" alt="">
+    </a>
+
+    <i class='bx bx-menu' id="menu-icon"></i>
+
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#contactForm">Contact</a></li>
+    </ul>
+
+    <div class="header-icon">
+      <i class='bx bx-cart' id="cartIcon"></i>
+      <i class='bx bx-search' id="search-icon"></i>
+    </div>
+
+    <div class="search-box">
+      <input type="search" id="search" placeholder="Search Here..">
+    </div>
+  </header>
+
+  <!-- HOME -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h1>Start your day <br> with coffee</h1>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+
+    <div class="home-img">
+      <img src="main.png" alt="">
+    </div>
+  </section>
+
+  <!-- ABOUT / OUR HISTORY -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="about.jpg" alt="">
+    </div>
+
+    <div class="about-text">
+      <h2>Our History</h2>
+
+      <p>
+        Perjalanan kami dimulai dari sebuah pertanyaan sederhana: apa jadinya kalau secangkir kopi bisa menghadirkan rasa yang bukan hanya enak, tapi juga bermakna?
+        Dari pertanyaan itu, kami mulai meracik kopi dari sudut kecil yang penuh aroma panggang dan percobaan tanpa henti.
+        <span id="moreText" style="display:none;">
+          Kami percaya bahwa kopi bukan sekadar minuman—ia adalah jeda, teman cerita, dan penghubung antar manusia.
+          Itulah alasan kami memilih biji terbaik, merawat setiap proses sangrai, dan menyajikan produk dengan ketulusan.
+          Hingga hari ini, perjalanan itu masih terus berjalan—dan setiap cangkir yang kamu nikmati adalah bagian dari cerita kami.
+        </span>
+      </p>
+
+      <a id="readMoreBtn" class="btn" style="cursor:pointer;">Lihat Selengkapnya</a>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="products">
+    <div class="heading">
+      <h2>Our Popular Products</h2>
+    </div>
+
+    <div class="products-container">
+
+      <div class="box">
+        <img src="p1.png" alt="">
+        <h3>Arabicca Coffee 200gr</h3>
+        <div class="content">
+          <span>Rp143.000</span>
+          <a href="#" class="add-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="p2.png" alt="">
+        <h3>Botero Coffee 150gr</h3>
+        <div class="content">
+          <span>Rp85.000</span>
+          <a href="#" class="add-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="p3.png" alt="">
+        <h3>Patch Roast 200gr</h3>
+        <div class="content">
+          <span>Rp115.000</span>
+          <a href="#" class="add-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="product-roko (1).png" alt="">
+        <h3>Magnum Filter (BEST COMBO!)</h3>
+        <div class="content">
+          <span>Rp27.000</span>
+          <a href="#" class="add-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="p5.png" alt="">
+        <h3>Sacreg Grounds 250gr</h3>
+        <div class="content">
+          <span>Rp210.000</span>
+          <a href="#" class="add-cart">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="p6.png" alt="">
+        <h3>Coffee Bags <i>Smooth Italian</i> 100gr</h3>
+        <div class="content">
+          <span>Rp95.000</span>
+          <a href="#" class="add-cart">Add to cart</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CUSTOMERS -->
+  <section class="customers" id="customers">
+    <div class="heading">
+      <h2>OUR CUSTOMERS</h2>
+    </div>
+
+    <div class="customer-slider-wrapper">
+
+      <button class="slide-btn" id="prevBtn">‹</button>
+
+      <div class="customer-slider" id="customerSlider">
+
+        <div class="customer-card">
+          <div class="stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+          </div>
+          <p>KOPINYA MANTAP + ROKOK MAGNUM. Combo terbaik!</p>
+          <h2>Elzard</h2>
+          <img src="Elzhard.jpeg" alt="">
+        </div>
+
+        <div class="customer-card">
+          <div class="stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+          </div>
+          <p>Kopinya nendang bgt kak! Wenak poll.</p>
+          <h2>Ayu Ting-Ting</h2>
+          <img src="cust1.jpg" alt="">
+        </div>
+
+        <div class="customer-card">
+          <div class="stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+          </div>
+          <p>Kok botero rasanya kek bau mbek ya?</p>
+          <h2>Anomali Kapetakan</h2>
+          <img src="cust2.jpg" alt="">
+        </div>
+
+        <div class="customer-card">
+          <div class="stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i>
+          </div>
+          <p>JUARA!</p>
+          <h2>Mas Amba</h2>
+          <img src="cust3.png" alt="">
+        </div>
+
+        <div class="customer-card">
+          <div class="stars">
+            <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star-half'></i>
+          </div>
+          <p>SAYA SANGAT SUKA KOPINYA!!</p>
+          <h2>Brando</h2>
+          <img src="cust4.jpg" alt="">
+        </div>
+
+      </div>
+
+      <button class="slide-btn" id="nextBtn">›</button>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="contact-form" id="contactForm">
+    <div class="contact-form-container">
+      <h2>Hubungi Kami</h2>
+      <p>Isi formulir di bawah ini untuk menghubungi kami.</p>
+
+      <form id="formHubungi">
+        <div class="form-group">
+          <label>Nama</label>
+          <input type="text" id="nama" required placeholder="Masukkan nama kamu">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" required placeholder="Email aktif">
+        </div>
+
+        <div class="form-group">
+          <label>Pesan</label>
+          <textarea id="pesan" required placeholder="Tulis pesan kamu di sini..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="footer-box">
+      <h2>Coffee Heula.</h2>
+      <p>Tetap terhubung dengan kami melalui media sosial.</p>
+
+      <div class="social">
+        <a href="https://www.facebook.com/share/1BoAFP9Vkq/"><i class='bx bxl-facebook'></i></a>
+        <a href="https://www.instagram.com/wisnuuuuajii?igsh=MXBra21tNWtlNnhuOA=="><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.tiktok.com/@enuuw?_r=1&_t=ZS-91a9N3JpTbb"><i class='bx bxl-tiktok'></i></a>
+      </div>
+    </div>
+
+    <div class="footer-box">
+      <h2>Support</h2>
+      <li><a href="#products">Product</a></li>
+      <li><a href="#">Help & Support</a></li>
+      <li><a href="#">Return Policy</a></li>
+      <li><a href="#">Terms Of Use</a></li>
+    </div>
+
+    <div class="footer-box">
+      <h2>View Guides</h2>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog Posts</a></li>
+      <li><a href="#">Our Branches</a></li>
+    </div>
+
+    <div class="footer-box contact">
+      <a href="https://maps.app.goo.gl/4jtuUQvciT8EimhLA" target="_blank"><i class='bx bxs-map'></i> Jl. Sukahati Haurgeulis, Indramayu</a>
+      <a href="tel:+6285928891721"><i class='bx bxs-phone'></i> +62 859 2889 1721</a>
+      <a href="mailto:wisnuajinugroho67@gmail.com"><i class='bx bxl-gmail'></i> wisnuajinugroho67@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- COPYRIGHT -->
+  <div class="copyright">
+    <p>&#169; Wisnu Aji Nugroho</p>
+  </div>
+
+  <!-- CART -->
+  <div class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+
+    <div class="cart-total">
+      Total: <span id="cartTotal">Rp0</span>
+    </div>
+
+    <button class="btn" id="checkoutBtn">Checkout</button>
+  </div>
+
+  <!-- SCROLL TOP -->
+  <button id="scrollTopBtn" title="Kembali ke atas"><i class='bx bxs-chevrons-up'></i></button>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

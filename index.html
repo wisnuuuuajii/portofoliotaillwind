@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Wisnu</title>
+  <link rel="stylesheet" href="./src/css/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-bg text-slate-200 font-sans transition-colors duration-300">
+      <!-- LOADER -->
+         <div id="loader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-bg">
+    <div class="loader-ring mb-4"></div>
+    <p class="text-slate-400 text-sm tracking-widest">LOADING</p>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full z-50 bg-bg/80 backdrop-blur border-b border-white/5">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3 group cursor-pointer">
+        <div class="w-10 h-10 rounded-full p-[2px] bg-gradient-to-tr from-accent via-cyan-400 to-purple-500 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/50 group-hover:scale-105">
+          <img src="./img/1.jpeg" alt="Wisnu" class="w-full h-full rounded-full object-cover bg-bg">
+        </div>
+        <span class="font-bold text-lg text-accent group-hover:text-cyan-400 transition">Wisnu Aji Nugroho</span>
+      </div>
+
+      <ul class="hidden md:flex gap-8 text-sm">
+        <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+        <li><a href="#about" class="hover:text-accent transition">About</a></li>
+        <li><a href="#skills" class="hover:text-accent transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-accent transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-accent transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- HERO -->
+  <section id="home" class="min-h-screen flex items-center justify-center text-center px-6 reveal">
+    <div class="animate-fade-in flex flex-col items-center">
+      <div class="w-32 h-32 md:w-36 md:h-36 mb-6 rounded-full p-[3px] bg-gradient-to-tr from-accent via-cyan-400 to-purple-500 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-accent/40">
+        <img src="./img/1.jpeg" alt="Wisnu" class="w-full h-full rounded-full object-cover bg-bg">
+      </div>
+      <h2 class="text-4xl md:text-5xl font-extrabold">Hi, I’m <span class="text-accent">Wisnu</span></h2>
+      <p class="mt-4 text-slate-400 h-6">
+  <span id="typing-text" class="border-r border-slate-500 pr-1"></span>
+</p>
+
+      <a href="#projects" class="inline-block mt-8 px-8 py-3 rounded-xl bg-accent text-slate-900 font-semibold hover:scale-105 hover:shadow-lg hover:shadow-accent/40 transition-all duration-300">
+        View Projects
+      </a>
+
+      <!-- Social Media -->
+      <div class="mt-8 flex items-center justify-center gap-5">
+        <a href="https://www.instagram.com/wisnuuuuajii/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/wisnu.ajin.31" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://tiktok.com/@enuuw" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://github.com/wisnuuuuajii" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/6285928891721" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/wisnu-aji-nugroho12/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </section>
+
+<!-- ABOUT -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-24 reveal">
+  <div class="grid md:grid-cols-2 gap-68items-center">
+    <!-- LEFT (PHOTO) -->
+<div class="flex justify-center md:justify-start">
+  <div class="w-72 h-72 md:w-80 md:h-80 rounded-3xl p-[4px]
+              bg-gradient-to-tr from-accent via-cyan-400 to-purple-500
+              hover:scale-105 transition-all duration-300
+              shadow-2xl shadow-accent/30">
+    <img src="img/3.png" alt="Wisnu"
+         class="w-full h-full rounded-3xl object-cover bg-bg">
+  </div>
+</div>
+
+
+    <!-- RIGHT (TEXT) -->
+    <div>
+      <h3 class="text-3xl md:text-4xl font-bold mb-6">
+        About <span class="text-accent">Me</span>
+      </h3>
+
+      <p class="text-slate-400 leading-relaxed mb-6">
+        Hi, I’m Wisnu, a first-semester Information Systems student at Universitas Subang.
+        I’m interested in web development, UI/UX design, and information technology.
+        I enjoy learning new technologies, building simple projects, and continuously
+        improving my skills to create useful and efficient digital solutions.
+      </p>
+
+      <div class="grid grid-cols-2 gap-4 max-w-sm">
+        <div class="bg-[#1b2638]/70 backdrop-blur rounded-xl p-4 border border-white/5">
+          <h4 class="text-accent text-xl font-bold">2+</h4>
+          <p class="text-slate-400 text-xs mt-1">Projects Built</p>
+        </div>
+
+        <div class="bg-[#1b2638]/70 backdrop-blur rounded-xl p-4 border border-white/5">
+          <h4 class="text-accent text-xl font-bold">Web</h4>
+          <p class="text-slate-400 text-xs mt-1">Front-End Focus</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="relative overflow-hidden group">
+  <!-- blur edge -->
+  <div class="pointer-events-none absolute left-0 top-0 w-20 h-full bg-gradient-to-r from-bg to-transparent z-10"></div>
+  <div class="pointer-events-none absolute right-0 top-0 w-20 h-full bg-gradient-to-l from-bg to-transparent z-10"></div>
+
+  <div class="marquee group-hover:paused">
+    <div class="marquee-inner">
+      <!-- SET 1 -->
+      <img src="./img/clients/linkedin-ar21.svg" class="client-logo" />
+      <img src="./img/clients/un-ar21.svg" class="client-logo" />
+      <img src="./img/clients/youtube-ar21.svg" class="client-logo" />
+      <img src="./img/clients/xbox-ar21.svg" class="client-logo" />
+      <img src="./img/clients/zoomus-ar21.svg" class="client-logo" />
+      <img src="./img/clients/grab-ar21.svg" class="client-logo" />
+
+      <!-- SET 2 (duplikat persis) -->
+      <img src="./img/clients/linkedin-ar21.svg" class="client-logo" />
+      <img src="./img/clients/un-ar21.svg" class="client-logo" />
+      <img src="./img/clients/youtube-ar21.svg" class="client-logo" />
+      <img src="./img/clients/xbox-ar21.svg" class="client-logo" />
+      <img src="./img/clients/zoomus-ar21.svg" class="client-logo" />
+      <img src="./img/clients/grab-ar21.svg" class="client-logo" />
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-28 reveal">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-accent mb-14 text-center">Skills</h3>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
+        <div class="skill-card reveal">
+          <div class="skill-icon bg-orange-500/10 text-orange-400"><i class="fa-brands fa-html5"></i></div>
+          <h4>HTML</h4>
+          <p>Menyusun struktur halaman web secara rapi dan semantik.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon bg-blue-500/10 text-blue-400"><i class="fa-brands fa-css3-alt"></i></div>
+          <h4>CSS</h4>
+          <p>Mengatur tampilan dan layout agar nyaman di berbagai device.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon bg-yellow-500/10 text-yellow-400"><i class="fa-brands fa-js"></i></div>
+          <h4>JavaScript</h4>
+          <p>Menambahkan interaksi agar website terasa hidup.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon bg-slate-500/10 text-slate-300"><i class="fa-brands fa-github"></i></div>
+          <h4>GitHub</h4>
+          <p>Mengelola versi kode dan kolaborasi proyek.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon bg-purple-500/10 text-purple-400"><i class="fa-brands fa-bootstrap"></i></div>
+          <h4>Bootstrap</h4>
+          <p>UI cepat dengan komponen siap pakai.</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon bg-cyan-500/10 text-cyan-400"><i class="fa-solid fa-wind"></i></div>
+          <h4>Tailwind CSS</h4>
+          <p>Utility-first untuk desain fleksibel dan efisien.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-24 reveal">
+    <h3 class="text-3xl font-bold text-accent mb-14 text-center">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="project-card group reveal">
+        <div class="project-thumb"><img src="./img/ProjectCover1.png" alt="Website Coffee"></div>
+        <div class="project-overlay rounded-xl">
+          <a href="projects/DW_UTS_D1A250003_WisnuAjiNugroho/index.html" class="project-btn">View Project</a>
+        </div>
+        <div class="mt-5">
+          <h4 class="font-bold text-lg">Website Coffee</h4>
+          <p class="text-slate-400 mt-1 text-sm">Proyek pembuatan website coffee shop, fokus UX dan desain menarik.</p>
+        </div>
+      </div>
+      <div class="project-card group reveal">
+        <div class="project-thumb"><img src="./img/ProjectCover2.png" alt="Portofolio Bootstrap"></div>
+        <div class="project-overlay rounded-xl">
+          <a href="projects/portofolio_bootstrap/index.html" class="project-btn">View Project</a>
+        </div>
+        <div class="mt-5">
+          <h4 class="font-bold text-lg">Portofolio Bootstrap</h4>
+          <p class="text-slate-400 mt-1 text-sm">Website portofolio pribadi menggunakan Bootstrap & SVG wave dari Get Waves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- GALLERY -->
+<section id="gallery" class="max-w-6xl mx-auto px-6 py-24 reveal">
+  <h3 class="text-3xl font-bold text-accent mb-14 text-center">
+    Gallery
+  </h3>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <!-- ITEM -->
+    <div class="gallery-card group reveal">
+      <img src="./img/gallery/1.jpg" alt="Gallery Photo">
+      <div class="gallery-overlay">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </div>
+
+    <div class="gallery-card group reveal">
+      <img src="./img/gallery/2.jpg" alt="Gallery Photo">
+      <div class="gallery-overlay">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </div>
+
+    <div class="gallery-card group reveal">
+      <img src="./img/3.png " alt="Gallery Photo">
+      <div class="gallery-overlay">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </div>
+
+    <div class="gallery-card group reveal">
+      <img src="./img/gallery/4.jpg" alt="Gallery Photo">
+      <div class="gallery-overlay">
+        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- cONTACTS -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-24 reveal">
+    <div class="text-center mb-14">
+      <h3 class="text-3xl md:text-4xl font-bold mb-3">
+        Let's <span class="text-accent">Connect</span>
+      </h3>
+      <p class="text-slate-400 max-w-2xl mx-auto">
+        Punya ide, project, atau sekadar ingin ngobrol? Kirimkan sinyalmu, saya selalu terbuka.
+      </p>
+    </div>
+
+  <div class="contact-shell grid md:grid-cols-2 gap-8 items-start">
+      <!-- LEFT -->
+  <div class="flex flex-col gap-6 justify-start h-full">
+        <p class="text-xs tracking-widest text-accent flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+          SYSTEM STATUS : ONLINE
+        </p>
+
+        <a href="mailto:wisnuajinugroho@gmail.com" class="contact-info-card">
+          <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+          <div class="flex flex-col">
+            <span class="label">EMAIL</span>
+            <span class="value">wisnuajinugroho67@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/6285928891721" target="_blank" class="contact-info-card">
+          <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="flex flex-col">
+            <span class="label">WHATSAPP</span>
+            <span class="value">+62 859-2889-1721</span>
+          </div>
+        </a>
+      </div>
+
+<!-- RIGHT -->
+<div class="contact-panel">
+  <h4 class="flex items-center gap-2 text-sm font-semibold tracking-widest mb-6 text-slate-200">
+    <i class="fa-solid fa-paper-plane text-accent"></i>
+    INITIATE DATA TRANSMISSION
+  </h4>
+
+  <form class="space-y-5">
+
+    <div class="relative">
+      <i class="fa-regular fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+      <input type="text" placeholder="Nama"
+             class="contact-input">
+    </div>
+
+    <div class="relative">
+      <i class="fa-regular fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+      <input type="email" placeholder="Email"
+             class="contact-input">
+    </div>
+
+    <div class="relative">
+      <i class="fa-regular fa-comment-dots absolute left-4 top-4 text-slate-500 text-sm"></i>
+      <textarea rows="4" placeholder="Data Transmisi Pesan"
+                class="contact-input"></textarea>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full mt-2 px-8 py-3 rounded-xl bg-accent text-slate-900 font-semibold
+             hover:scale-[1.02] hover:shadow-lg hover:shadow-accent/40 transition-all duration-300">
+      Submit  →
+    </button>
+
+  </form>
+</div>
+
+
+    </div>
+  </section>
+
+  
+  <footer class="border-t border-white/5 mt-24">
+  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+
+    <div class="text-center md:text-left">
+      <h4 class="font-semibold tracking-wide text-slate-200">
+        Wisnu Aji Nugroho
+      </h4>
+      <p class="text-xs text-slate-500 mt-1">
+        Front-End Developer • UI/UX Enthusiast
+      </p>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="https://github.com/wisnuuuuajii" target="_blank" class="social-icon">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/wisnuuuuajii/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/wisnu-aji-nugroho12/" target="_blank" class="social-icon">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+      <a href="mailto:wisnuajinugroho@gmail.com" class="social-icon">
+        <i class="fa-regular fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="text-center py-4 text-xs text-slate-600 border-t border-white/5">
+    © 2026 Wisnu. Crafted with passion & code.
+  </div>
+</footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+    // Loader
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loader");
+      setTimeout(() => loader.classList.add("loader-hide"), 800);
+    });
+
+    //switching text
+
+    const texts = [
+    "Mahasiswa Sistem Informasi",
+    "Front-End Developer",
+    "UI / UX Enthusiast",
+    "Building clean interfaces"
+  ];
+
+  let i = 0;
+  let j = 0;
+  let isDeleting = false;
+  const speed = 80;
+  const delay = 1200;
+  const target = document.getElementById("typing-text");
+
+  function typeLoop() {
+    const current = texts[i];
+    if (!isDeleting) {
+      target.textContent = current.slice(0, j++);
+      if (j > current.length) {
+        setTimeout(() => (isDeleting = true), delay);
+      }
+    } else {
+      target.textContent = current.slice(0, j--);
+      if (j === 0) {
+        isDeleting = false;
+        i = (i + 1) % texts.length;
+      }
+    }
+    setTimeout(typeLoop, isDeleting ? speed / 2 : speed);
+  }
+
+  typeLoop();
+
+    // Reveal scroll animation
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) entry.target.classList.add("active");
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
