@@ -10,7 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body class="bg-bg text-slate-200 font-sans transition-colors duration-300">
+<body class="bg-bg text-slate-200 font-sans transition-colors duration-300
+               dark:bg-[#0f172a] dark:text-slate-200">
     <!-- LOADER -->
     <div
       id="loader"
@@ -21,17 +22,18 @@
     </div>
 
     <!-- NAVBAR -->
-    <nav
-      class="fixed top-0 w-full z-50 bg-bg/80 backdrop-blur border-b border-white/5"
-    >
-      <div
-        class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"
-      >
+    <nav class="fixed top-0 w-full z-50 bg-bg/80 backdrop-blur border-b border-white/5">
+      
+      <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center gap-3 group cursor-pointer">
-          <div
-            class="w-10 h-10 rounded-full p-[2px] bg-gradient-to-tr from-accent via-cyan-400 to-purple-500 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/50 group-hover:scale-105"
-          >
+          <!-- Light/Dark Toggle -->
+<button id="theme-toggle" class="ml-4 text-slate-200">
+  <i id="theme-icon" class="fa-solid fa-moon"></i>
+</button>
+
+
+          <div class="w-10 h-10 rounded-full p-[2px] bg-gradient-to-tr from-accent via-cyan-400 to-purple-500 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-accent/50 group-hover:scale-105">
             <img
               src="./img/1.jpeg"
               alt="Wisnu"
@@ -751,6 +753,35 @@
           window.scrollTo({ top: 0, behavior: "smooth" });
         });
       }
+      // =========================
+// Light / Dark Mode Toggle
+// =========================
+const themeToggleBtn = document.getElementById("theme-toggle");
+const themeIcon = document.getElementById("theme-icon");
+
+// Set awal dari localStorage
+if (localStorage.getItem("theme") === "light") {
+  document.documentElement.classList.remove("dark");
+  themeIcon.classList.replace("fa-moon", "fa-sun");
+} else {
+  document.documentElement.classList.add("dark");
+  themeIcon.classList.replace("fa-sun", "fa-moon");
+}
+
+// Event toggle
+themeToggleBtn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+
+  if (document.documentElement.classList.contains("dark")) {
+    themeIcon.classList.replace("fa-sun", "fa-moon");
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeIcon.classList.replace("fa-moon", "fa-sun");
+    localStorage.setItem("theme", "light");
+  }
+});
+
+
     </script>
   </body>
 </html>
